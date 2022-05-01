@@ -1,0 +1,35 @@
+{
+  "name": "openweather_typescript_domain",
+  "version": "1.0.0",
+  "description": "Contains domain objects for the OpenWeather API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZsoltBerki/OpenWeatherTypeScript.git"
+  },
+  "keywords": [
+    "openweather",
+    "typescript",
+    "domain"
+  ],
+  "author": "Zsolt Berki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZsoltBerki/OpenWeatherTypeScript/issues"
+  },
+  "homepage": "https://github.com/ZsoltBerki/OpenWeatherTypeScript#readme",
+  "dependencies": {
+    "shallow-equal-object": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.1",
+    "babel-jest": "^28.0.3",
+    "ts-jest": "^27.1.4"
+  }
+}

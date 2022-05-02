@@ -1,3 +1,4 @@
+import InvalidValue from "../InvalidValueError";
 import { ValueObject } from "../ValueObject";
 
 interface LongitudeProps {
@@ -20,7 +21,7 @@ class Longitude extends ValueObject<LongitudeProps> {
       longitude < -180 ||
       longitude > 180
     ) {
-      throw new Error("Longitude must be between -180 and +180");
+      throw new InvalidValue("Longitude must be between -180 and +180");
     } else {
       return new Longitude({ value: longitude });
     }

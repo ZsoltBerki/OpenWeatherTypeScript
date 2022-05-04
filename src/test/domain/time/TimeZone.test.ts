@@ -1,0 +1,35 @@
+import InvalidValue from "../../../main/domain/InvalidValueError";
+import TimeZone from "../../../main/domain/time/TimeZone";
+
+describe("TimeZone", () => {
+  test("can be created", () => {
+    const result = TimeZone.create("Europe/Helsinki", 10800);
+
+    expect(result.name).toBe("Europe/Helsinki");
+    expect(result.offset).toBe(10800);
+  });
+
+  test("cannot be created with missing name", () => {
+    expect(() => {
+      TimeZone.create(null, 10800);
+    }).toThrow(InvalidValue);
+
+    expect(() => {
+      TimeZone.create(undefined, 10800);
+    }).toThrow(InvalidValue);
+
+    expect(() => {
+      TimeZone.create("", 10800);
+    }).toThrow(InvalidValue);
+  });
+
+  test("cannot be created with missing offset", () => {
+    expect(() => {
+      TimeZone.create("Europe/Helsinki", null);
+    }).toThrow(InvalidValue);
+
+    expect(() => {
+      TimeZone.create("Europe/Helsinki", undefined);
+    }).toThrow(InvalidValue);
+  });
+});

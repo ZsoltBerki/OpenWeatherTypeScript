@@ -19,18 +19,18 @@ class TimeZone extends ValueObject<TimeZoneProps> {
     return this.props.offset;
   }
 
-    /**
+  /**
    * Returns the offset is miliseconds
    */
-     get offsetMs(): number {
-      return this.props.offset * 1000;
-    }
+  get offsetMs(): number {
+    return this.props.offset * 1000;
+  }
 
   private constructor(props: TimeZoneProps) {
     super(props);
   }
 
-  public static create(name: string, offset: number) {
+  public static create(name: string, offset: number): TimeZone {
     if (isEmpty(name)) {
       throw new InvalidValue("TimeZone must have name");
     }

@@ -12,9 +12,19 @@ class TimeZone extends ValueObject<TimeZoneProps> {
     return this.props.name;
   }
 
+  /**
+   * Returns the offset is seconds
+   */
   get offset(): number {
     return this.props.offset;
   }
+
+    /**
+   * Returns the offset is miliseconds
+   */
+     get offsetMs(): number {
+      return this.props.offset * 1000;
+    }
 
   private constructor(props: TimeZoneProps) {
     super(props);

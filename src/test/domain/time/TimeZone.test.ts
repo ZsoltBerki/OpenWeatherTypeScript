@@ -7,6 +7,7 @@ describe("TimeZone", () => {
 
     expect(result.name).toBe("Europe/Helsinki");
     expect(result.offset).toBe(10800);
+    expect(result.offsetMs).toBe(10800000);
   });
 
   test("cannot be created with missing name", () => {

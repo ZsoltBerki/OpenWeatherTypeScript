@@ -21,15 +21,15 @@ class Temperature extends ValueObject<TemperatureProps> {
     super(props);
   }
 
-  get inCelsius() {
+  get inCelsius(): number {
     return this.props.valueInCelsius;
   }
 
-  get inKelvin() {
+  get inKelvin(): number {
     return celsiusToKelvin(this.props.valueInCelsius);
   }
 
-  get inFahrenheit() {
+  get inFahrenheit(): number {
     return celsiusToFahrenheit(this.props.valueInCelsius);
   }
 

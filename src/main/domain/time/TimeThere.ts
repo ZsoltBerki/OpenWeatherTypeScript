@@ -50,7 +50,7 @@ class TimeThere extends ValueObject<TimeProps> {
     return this.dateThere.toISOString().split("T")[1].split(".")[0];
   }
 
-  public static create(epochSeconds: number, timeZone?: TimeZone) {
+  public static create(epochSeconds: number, timeZone?: TimeZone): TimeThere {
     if (isMissing(epochSeconds)) {
       throw new InvalidValue("Time must have an epochSeconds parameter");
     }

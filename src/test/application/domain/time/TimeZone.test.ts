@@ -1,5 +1,5 @@
-import InvalidValue from "../../../main/domain/InvalidValueError";
-import TimeZone from "../../../main/domain/time/TimeZone";
+import InvalidValue from "../../../../main/application/domain/InvalidValueError";
+import TimeZone from "../../../../main/application/domain/time/TimeZone";
 
 describe("TimeZone", () => {
   test("can be created", () => {

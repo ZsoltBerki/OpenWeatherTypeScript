@@ -1,8 +1,8 @@
 import ParsingError from "./ParsingError";
-import Location from "../domain/location/Location";
-import Longitude from "../domain/location/Longitude";
-import Latitude from "../domain/location/Latitude";
 import { isNumber, isObject } from "./ParserUtils";
+import Longitude from "../application/domain/location/Longitude";
+import Latitude from "../application/domain/location/Latitude";
+import Location from "../application/domain/location/Location";
 
 class LocationParser {
   private static LONGITUDE_FIELD = "lon";

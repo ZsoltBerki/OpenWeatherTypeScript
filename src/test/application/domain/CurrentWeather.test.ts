@@ -1,8 +1,8 @@
-import CurrentWeather from "../../main/domain/CurrentWeather";
-import Temperature from "../../main/domain/Temperature";
-import TimeThere from "../../main/domain/time/TimeThere";
-import TimeZone from "../../main/domain/time/TimeZone";
-import Unit from "../../main/domain/Unit";
+import CurrentWeather from "../../../main/application/domain/CurrentWeather";
+import Temperature from "../../../main/application/domain/Temperature";
+import TimeThere from "../../../main/application/domain/time/TimeThere";
+import TimeZone from "../../../main/application/domain/time/TimeZone";
+import Unit from "../../../main/application/domain/Unit";
 
 // GMT: Sunday, 1 May 2022 08:53:21
 const time_epochSeconds = 1651395201;

@@ -1,5 +1,5 @@
-import InvalidValue from "../../../main/domain/InvalidValueError";
-import Longitude from "../../../main/domain/location/Longitude";
+import InvalidValue from "../../../../main/application/domain/InvalidValueError";
+import Longitude from "../../../../main/application/domain/location/Longitude";
 
 describe("Longitude", () => {
   test("can be created", () => {

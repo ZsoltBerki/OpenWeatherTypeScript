@@ -1,7 +1,7 @@
-import InvalidValue from "../../../main/domain/InvalidValueError";
-import Latitude from "../../../main/domain/location/Latitude";
-import Location from "../../../main/domain/location/Location";
-import Longitude from "../../../main/domain/location/Longitude";
+import InvalidValue from "../../../../main/application/domain/InvalidValueError";
+import Latitude from "../../../../main/application/domain/location/Latitude";
+import Longitude from "../../../../main/application/domain/location/Longitude";
+import Location from "../../../../main/application/domain/location/Location";
 
 describe("Location", () => {
   test("can be created", () => {

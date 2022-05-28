@@ -1,6 +1,6 @@
-import InvalidValue from "../../main/domain/InvalidValueError";
-import Temperature from "../../main/domain/Temperature";
-import Unit from "../../main/domain/Unit";
+import InvalidValue from "../../../main/application/domain/InvalidValueError";
+import Temperature from "../../../main/application/domain/Temperature";
+import Unit from "../../../main/application/domain/Unit";
 
 describe("Temperature", () => {
   test("can be created", () => {
